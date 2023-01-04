@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val uri = Uri.parse("rtsp://201.155.194.137:9090/dss/monitor/params?cameraid=1000072%242&substream=1")
+        val uri1 = Uri.parse("rtsp://201.155.194.137:9090/dss/monitor/params?cameraid=1000072%242&substream=1")
+        val uri2 = Uri.parse("rtsp://201.155.194.137:9090/dss/monitor/params?cameraid=1000087%240&substream=1")
 
         libVlc = LibVLC(this)
         mediaPlayer = MediaPlayer(libVlc)
@@ -28,10 +29,10 @@ class MainActivity : AppCompatActivity() {
 
         mediaPlayer.attachViews(videoLayout, null, false, false)
 
-        val media = Media(libVlc, uri)
+        val media = Media(libVlc, uri2)
         media.setHWDecoderEnabled(true, false)
         media.addOption(":network-caching=600")
-
+        mediaPlayer.aspectRatio.plus("9:16")
         mediaPlayer.media = media
         media.release()
         mediaPlayer.play()
