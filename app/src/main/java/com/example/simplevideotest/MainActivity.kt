@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity(){
 
     private fun createMediaSource(){
         urlType = URLType.MP4
-        urlType.url = "https://mega.nz/file/hWdGXZyR#8z392EooQn6FbFffaOfJroajyYEkw_CgsgxzWuWK37c"
+        urlType.url = "https://joy1.videvo.net/videvo_files/video/free/2014-05/large_watermarked/Futuristic_Numbers_Countdown__Videvo_preview.mp4"
 
 //        urlType = URLType.HLS
 //        urlType.url = "rtsp://201.155.194.137:9090/dss/monitor/params?cameraid=1000072%240&substream=1"
