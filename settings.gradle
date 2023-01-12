@@ -3,7 +3,6 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
-        maven { url "https://dl.bintray.com/videolan/Android" }
     }
 }
 dependencyResolutionManagement {
@@ -11,8 +10,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://dl.bintray.com/videolan/Android" }
-
     }
 }
 rootProject.name = "Simple Video Test"
